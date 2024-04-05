@@ -1,0 +1,26 @@
+[
+  {
+    "name": "NSF",
+    "logo_image": "images/NSF_Official_logo_High_Res_small.png"
+  },
+  {
+    "name": "TACC",
+    "logo_image": "images/TACC-100px.png"
+  },
+  {
+    "name": "Planet-Texas",
+    "logo_image": "images/100_PT_2050_wordmark_Horiz.png"
+  },
+  {
+    "name": "Azure",
+    "logo_image": "images/azure-100px.png"
+  },
+  {
+    "name": "SETX",
+    "logo_image": "images/TACC-100px.png"
+  },
+  {
+    "name": "ACC",
+    "logo_image": "images/TACC-100px.png"
+  }
+]

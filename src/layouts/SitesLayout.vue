@@ -6,17 +6,28 @@
           <!-- <q-avatar>
             <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
           </q-avatar> -->
-          <router-link to="/" style="color: white; text-decoration: none ;">
+          <router-link to="/" style="color: white; text-decoration: none">
             <!-- <q-icon name="home" />       -->
             REDI Solutions
           </router-link>
           <!-- <img :src="mainbanner" /> -->
         </q-toolbar-title>
 
-        <q-input dense  v-model="text" label="Search" input-class="text-right" class="q-ml-md" >
+        <q-input
+          dense
+          v-model="text"
+          label="Search"
+          input-class="text-right"
+          class="q-ml-md"
+        >
           <template v-slot:append>
             <q-icon v-if="text === ''" name="search"></q-icon>
-            <q-icon v-else name="clear" class="cursor-pointer" @click="text = ''"></q-icon>
+            <q-icon
+              v-else
+              name="clear"
+              class="cursor-pointer"
+              @click="text = ''"
+            ></q-icon>
           </template>
         </q-input>
       </q-toolbar>
@@ -28,13 +39,16 @@
         <q-route-tab to="/Projects" label="Project Profiles" />
       </q-tabs> -->
 
-      <q-bar style="min-width: 250px;" class="bg-grey text-white rounded-borders">
+      <q-bar
+        style="min-width: 250px"
+        class="bg-grey text-white rounded-borders"
+      >
         <div class="cursor-pointer non-selectable">
           About <q-icon name="expand_more" />
           <q-menu>
             <q-list dense style="min-width: 100px">
               <q-item to="/Philosophy" clickable v-close-popup>
-                <q-item-section >Philosophy</q-item-section>
+                <q-item-section>Philosophy</q-item-section>
               </q-item>
               <q-item to="/ConceptModel" clickable v-close-popup>
                 <q-item-section>Concept Models</q-item-section>
@@ -50,7 +64,7 @@
           <q-menu>
             <q-list dense style="min-width: 100px">
               <q-item clickable>
-                <q-item-section >Integrated Solutions</q-item-section>
+                <q-item-section>Integrated Solutions</q-item-section>
                 <q-item-section side>
                   <q-icon name="keyboard_arrow_right"></q-icon>
                 </q-item-section>
@@ -69,7 +83,7 @@
                   </q-list>
                 </q-menu>
               </q-item>
-              <q-item clickable >
+              <q-item clickable>
                 <q-item-section>Data Ecosystem</q-item-section>
                 <q-item-section side>
                   <q-icon name="keyboard_arrow_right"></q-icon>
@@ -155,13 +169,6 @@
           </q-menu>
         </div>
       </q-bar>
-
-
-
-
-
-
-
     </q-header>
 
     <q-page-container>
@@ -170,7 +177,7 @@
 
     <q-footer elevated class="bg-grey-8 text-white">
       <q-toolbar class="flex flex-center q-pa-md">
-        <img :src="nsflogo" />
+        <!-- <img :src="nsflogo" />
         <q-img
           :src="tacclogo"
           alt="TACC logo"
@@ -178,8 +185,28 @@
           style="max-height: 60px; max-width: 187px"
         ></q-img>
         <img :src="planettexas" style="height: 60px; width: 187px" />
-        <!-- <img :src="planettexas" /> -->
-        <img :src="microsoftazure" />
+        <img :src="microsoftazure" /> -->
+
+        <q-section class="row">
+          <div class="q-gutter-md">
+            <q-img
+              v-for="logo in logos"
+              :key="logo.name"
+              :src="logo.logo_image"
+              style="max-height: 60px; max-width: 187px"
+              fit="fill"
+            >
+            </q-img>
+          </div>
+        </q-section>
+
+        <!-- <div
+          class="col-lg-4 col-md-6 col-xs-12"
+          v-for="(data, i) in logos"
+          :key="i"
+        >
+        <HomeCard class="q-ma-md" :key="i" :homecard_data="data" />
+      </div> -->
       </q-toolbar>
       <!-- <q-toolbar>
         <q-toolbar-title>
@@ -196,10 +223,18 @@
 <script>
 import { defineComponent, ref } from "vue";
 
+import logosjson from "assets/json/logos.json";
+
 export default defineComponent({
   name: "SitesLayout",
 
   components: {},
+
+  data() {
+    return {
+      logos: logosjson,
+    };
+  },
 
   setup() {
     return {
@@ -208,6 +243,8 @@ export default defineComponent({
       tacclogo: "images/TACC-100px.png",
       planettexas: "images/100_PT_2050_wordmark_Horiz.png",
       microsoftazure: "images/azure-100px.png",
+      SETX: "images/TACC-100px.png",
+      ACC: "images/TACC-100px.png",
     };
   },
 });
