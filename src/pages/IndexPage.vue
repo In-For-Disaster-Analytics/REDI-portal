@@ -17,6 +17,12 @@
       </div>
     </q-section>
 
+    <q-section class="row">
+      <div>
+        This is a test section for BI testing
+      </div>
+    </q-section>
+    
   </q-page>
   </template>
 

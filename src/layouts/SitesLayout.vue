@@ -240,11 +240,12 @@ export default defineComponent({
     return {
       mainbanner: "images/alaska-landscape-sm.jpg",
       nsflogo: "images/NSF_Official_logo_High_Res_small.png",
-      tacclogo: "images/TACC-100px.png",
+      tacclogo: "images/TACC-informal-Black-1c-300dpi.png",
       planettexas: "images/100_PT_2050_wordmark_Horiz.png",
       microsoftazure: "images/azure-100px.png",
       SETX: "images/TACC-100px.png",
       ACC: "images/TACC-100px.png",
+
     };
   },
 });

@@ -2,6 +2,9 @@
   <q-page class="flex flex-center">
     <q-list>
         <q-item>
+          test entry
+        </q-item>
+        <q-item>
           Movie Player
         </q-item>
     </q-list>
