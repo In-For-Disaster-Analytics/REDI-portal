@@ -68,7 +68,7 @@ module.exports = configure(function (/* ctx */) {
       // rebuildCache: true, // rebuilds Vite/linter/etc cache on startup
 
       publicPath: process.env.NODE_ENV === 'production' ? '/REDI-portal/' : '/',
-
+      
       // analyze: true,
       // env: {},
       // rawDefine: {}
