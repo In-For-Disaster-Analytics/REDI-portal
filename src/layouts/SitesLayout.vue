@@ -177,7 +177,7 @@
 
     <q-footer elevated class="bg-grey-8 text-white">
       <q-toolbar class="flex flex-center q-pa-md">
-        <img :src="nsflogo" />
+        <!-- <img :src="nsflogo" />
         <q-img
           :src="tacclogo"
           alt="TACC logo"
@@ -185,8 +185,28 @@
           style="max-height: 60px; max-width: 187px"
         ></q-img>
         <img :src="planettexas" style="height: 60px; width: 187px" />
-        <!-- <img :src="planettexas" /> -->
-        <img :src="microsoftazure" />
+        <img :src="microsoftazure" /> -->
+
+        <q-section class="row">
+          <div class="q-gutter-md">
+            <q-img
+              v-for="logo in logos"
+              :key="logo.name"
+              :src="logo.logo_image"
+              style="max-height: 60px; max-width: 187px"
+              fit="fill"
+            >
+            </q-img>
+          </div>
+        </q-section>
+
+        <!-- <div
+          class="col-lg-4 col-md-6 col-xs-12"
+          v-for="(data, i) in logos"
+          :key="i"
+        >
+        <HomeCard class="q-ma-md" :key="i" :homecard_data="data" />
+      </div> -->
       </q-toolbar>
       <!-- <q-toolbar>
         <q-toolbar-title>
@@ -203,10 +223,18 @@
 <script>
 import { defineComponent, ref } from "vue";
 
+import logosjson from "assets/json/logos.json";
+
 export default defineComponent({
   name: "SitesLayout",
 
   components: {},
+
+  data() {
+    return {
+      logos: logosjson,
+    };
+  },
 
   setup() {
     return {
@@ -214,7 +242,10 @@ export default defineComponent({
       nsflogo: "images/NSF_Official_logo_High_Res_small.png",
       tacclogo: "images/TACC-informal-Black-1c-300dpi.png",
       planettexas: "images/100_PT_2050_wordmark_Horiz.png",
-      microsoftazure: "images/microsoft-azure-logo-transparent.jpg",
+      microsoftazure: "images/azure-100px.png",
+      SETX: "images/TACC-100px.png",
+      ACC: "images/TACC-100px.png",
+
     };
   },
 });
