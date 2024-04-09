@@ -46,7 +46,7 @@ export default {
 
 <style lang="sass" scoped>
 .landing
-  background-image: url('images/home_landing.png')
+  background-image: url('assets/images/home_landing.png')
 
 
 
