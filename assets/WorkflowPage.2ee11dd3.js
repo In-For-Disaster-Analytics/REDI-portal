@@ -1,0 +1,1 @@
+import{Q as e}from"./QPage.a615dd0f.js";import{$ as a,j as o,a1 as t,a2 as r,a3 as s,a5 as n}from"./index.072c788c.js";const c=o({name:"WorkflowPage"});function f(l,p,_,d,i,m){return t(),r(e,{class:"flex flex-center"},{default:s(()=>[n(" WorkflowPage Content Here ")]),_:1})}var u=a(c,[["render",f]]);export{u as default};
