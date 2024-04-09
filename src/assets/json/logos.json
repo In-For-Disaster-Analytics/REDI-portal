@@ -1,14 +1,9 @@
 [
   [
     {
-      "name": "NSF",
-      "display": "True",
-      "logo_image": "images/NSF_Official_logo_High_Res_small.png"
-    },
-    {
       "name": "TACC",
       "display": "True",
-      "logo_image": "images/TACC-100px.png"
+      "logo_image": "images/TACC-informal-KO-1c-300dpi.png"
     },
     {
       "name": "Planet-Texas",
@@ -20,18 +15,22 @@
       "display": "True",
       "logo_image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg",
       "attribution": "By Microsoft Corporation - Microsoft, Public Domain -https://commons.wikimedia.org/w/index.php?curid=43353450"
-    }
-  ],
-  [
+    },
     {
       "name": "SETX",
-      "display": "False",
-      "logo_image": "images/TACC-100px.png"
+      "display": "True",
+      "logo_image": "images/SETx-URBAN-IFL-Logo-Full_Color-Final-01.svg"
     },
     {
       "name": "ACC",
       "display": "False",
-      "logo_image": "images/TACC-100px.png"
+      "logo_image": "images/ACC_GIS.png"
+    },
+    {
+      "name": "NSF",
+      "display": "True",
+      "logo_image": "images/NSF_Official_logo_High_Res_small.png"
     }
-  ]
+  ],
+  []
 ]

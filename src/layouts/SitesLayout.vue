@@ -182,15 +182,17 @@
           :key="index"
           :src="logo.logo_image"
           style="max-height: 60px; max-width: 187px; margin: 10px"
+          fit="contain"
+          class="flex"
         >
         </q-img>
-        <div
-          v-for="logo in logos"
+        <!-- <div
+          v-for="logo in logos[0]"
           :key="logo.name"
-          style="max-height: 60px; max-width: 187px; margin: 10px"
+          style="max-height: 80px; max-width: 187px; margin: 10px"
         >
           <p>{{ logo.name }}</p>
-        </div>
+        </div> -->
       </q-toolbar>
     </q-footer>
   </q-layout>
