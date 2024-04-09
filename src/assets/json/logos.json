@@ -1,26 +1,37 @@
 [
-  {
-    "name": "NSF",
-    "logo_image": "images/NSF_Official_logo_High_Res_small.png"
-  },
-  {
-    "name": "TACC",
-    "logo_image": "images/TACC-100px.png"
-  },
-  {
-    "name": "Planet-Texas",
-    "logo_image": "images/100_PT_2050_wordmark_Horiz.png"
-  },
-  {
-    "name": "Azure",
-    "logo_image": "images/azure-100px.png"
-  },
-  {
-    "name": "SETX",
-    "logo_image": "images/TACC-100px.png"
-  },
-  {
-    "name": "ACC",
-    "logo_image": "images/TACC-100px.png"
-  }
+  [
+    {
+      "name": "NSF",
+      "display": "True",
+      "logo_image": "images/NSF_Official_logo_High_Res_small.png"
+    },
+    {
+      "name": "TACC",
+      "display": "True",
+      "logo_image": "images/TACC-100px.png"
+    },
+    {
+      "name": "Planet-Texas",
+      "display": "True",
+      "logo_image": "images/100_PT_2050_wordmark_Horiz.png"
+    },
+    {
+      "name": "Azure",
+      "display": "True",
+      "logo_image": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Microsoft_Azure_Logo.svg",
+      "attribution": "By Microsoft Corporation - Microsoft, Public Domain -https://commons.wikimedia.org/w/index.php?curid=43353450"
+    }
+  ],
+  [
+    {
+      "name": "SETX",
+      "display": "False",
+      "logo_image": "images/TACC-100px.png"
+    },
+    {
+      "name": "ACC",
+      "display": "False",
+      "logo_image": "images/TACC-100px.png"
+    }
+  ]
 ]

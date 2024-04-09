@@ -177,45 +177,21 @@
 
     <q-footer elevated class="bg-grey-8 text-white">
       <q-toolbar class="flex flex-center q-pa-md">
-        <!-- <img :src="nsflogo" />
         <q-img
-          :src="tacclogo"
-          alt="TACC logo"
-          contain
-          style="max-height: 60px; max-width: 187px"
-        ></q-img>
-        <img :src="planettexas" style="height: 60px; width: 187px" />
-        <img :src="microsoftazure" /> -->
-
-        <q-section class="row">
-          <div class="q-gutter-md">
-            <q-img
-              v-for="logo in logos"
-              :key="logo.name"
-              :src="logo.logo_image"
-              style="max-height: 60px; max-width: 187px"
-              fit="fill"
-            >
-            </q-img>
-          </div>
-        </q-section>
-
-        <!-- <div
-          class="col-lg-4 col-md-6 col-xs-12"
-          v-for="(data, i) in logos"
-          :key="i"
+          v-for="(logo, index) in logos[0]"
+          :key="index"
+          :src="logo.logo_image"
+          style="max-height: 60px; max-width: 187px; margin: 10px"
         >
-        <HomeCard class="q-ma-md" :key="i" :homecard_data="data" />
-      </div> -->
+        </q-img>
+        <div
+          v-for="logo in logos"
+          :key="logo.name"
+          style="max-height: 60px; max-width: 187px; margin: 10px"
+        >
+          <p>{{ logo.name }}</p>
+        </div>
       </q-toolbar>
-      <!-- <q-toolbar>
-        <q-toolbar-title>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg" />
-          </q-avatar>
-          <div>Title</div>
-        </q-toolbar-title>
-      </q-toolbar> -->
     </q-footer>
   </q-layout>
 </template>
@@ -237,16 +213,7 @@ export default defineComponent({
   },
 
   setup() {
-    return {
-      mainbanner: "images/alaska-landscape-sm.jpg",
-      nsflogo: "images/NSF_Official_logo_High_Res_small.png",
-      tacclogo: "images/TACC-informal-Black-1c-300dpi.png",
-      planettexas: "images/100_PT_2050_wordmark_Horiz.png",
-      microsoftazure: "images/azure-100px.png",
-      SETX: "images/TACC-100px.png",
-      ACC: "images/TACC-100px.png",
-
-    };
+    return {};
   },
 });
 </script>
