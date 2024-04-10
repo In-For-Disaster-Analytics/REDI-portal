@@ -1,8 +1,8 @@
 {
-  "name": "sites-and-stories",
+  "name": "redi-solutions",
   "version": "0.0.1",
-  "description": "Application for narrative knowledge capture",
-  "productName": "Sites and Stories",
+  "description": "Website for TACC's REDI Solutions",
+  "productName": "REDI Solutions",
   "author": "Lissa Pearson <lissa.pearson@austin.utexas.edu>",
   "private": true,
   "scripts": {
