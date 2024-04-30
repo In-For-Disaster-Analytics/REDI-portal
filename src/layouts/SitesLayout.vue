@@ -186,13 +186,8 @@
           class="flex"
         >
         </q-img>
-        <!-- <div
-          v-for="logo in logos[0]"
-          :key="logo.name"
-          style="max-height: 80px; max-width: 187px; margin: 10px"
-        >
-          <p>{{ logo.name }}</p>
-        </div> -->
+        <ButtonCounter />
+        <LogoSoup />
       </q-toolbar>
     </q-footer>
   </q-layout>
@@ -200,7 +195,6 @@
 
 <script>
 import { defineComponent, ref } from "vue";
-
 import logosjson from "assets/json/logos.json";
 
 export default defineComponent({
